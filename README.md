@@ -1,3 +1,5 @@
+
+```md
 # SoftwareSeva Starter Kit
 
 A practical starter kit for building thoughtful, maintainable, privacy-conscious software with a modern edge stack.
@@ -27,3 +29,42 @@ starter-kit/
   REUSABILITY_POLICY.md
   templates/
   scripts/
+```
+
+## Principles
+
+- Keep projects small, clear, and composable.
+- Prefer boring, stable dependencies.
+- Extract reusable code into shared packages.
+- Use Cloudflare for simple, globally distributed infrastructure.
+- Use Flutter for polished mobile apps.
+- Use React + shadcn/ui for admin and dashboard interfaces.
+- Use Codex with clear project rules, not vague wishes.
+
+## Getting started
+
+Clone this repository:
+
+```bash
+git clone https://github.com/softwareseva/starter-kit.git
+```
+
+Copy the relevant files into a new project:
+
+```bash
+cp AGENTS.md ../my-project/
+cp DESIGN_SYSTEM.md ../my-project/
+cp PACKAGE_POLICY.md ../my-project/
+```
+
+Then adapt the project-specific sections.
+
+## Suggested use with Codex
+
+Every project should contain an `AGENTS.md` file. Codex should read it before planning or editing code.
+
+Recommended prompt:
+
+```text
+Read AGENTS.md, DESIGN_SYSTEM.md, and PACKAGE_POLICY.md first. Follow the project conventions. Prefer small diffs. Before adding a dependency, verify that it is latest stable and actively maintained.
+```
